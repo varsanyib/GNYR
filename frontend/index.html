@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNYR - Kezdőlap</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="menustrip">
+        <ul>
+            <li class="menubrand">GNYR</li>
+            <li class="menuitem clickable active"><a href="./index.html">Kezdőlap</a></li>
+            <li class="menuitem clickable"><a href="./index.html#req">Lekérdezés</a></li>
+        </ul>
+    </div>
+    <div id="req" class="content">
+        <div class="title">
+            <h1>GNYR Lekérdezés</h1>
+        </div>
+        <div class="left-content">
+            <h2>Kérdezze le egyszerűen a gépjárműve(i) információit!</h2>
+            <p>A keresőben forgalmi rendszám alapján tud gyorsan és egyszerűen a gépjárművére keresni. A rendszámot felségjelzés és kötőjelek nélkül kell megadni, szám és betű kombinációjában. Például: ABC123 vagy AAAA001</p>
+        </div>
+        <div class="right-content">
+            <form method="get" id="formFrsz">
+                <p><input type="radio" name="ChkOdometer" id="ChkOdometer" checked>Óraállások megtekintése</p>
+                <p><input type="radio" name="ChkInfos" id="ChkInfos" disabled>Járműinformációk megtekintése</p>
+                <input type="text" name="frsz" id="frsz" placeholder="Forgalmi rendszám" required>
+                <button type="submit" onclick="search();">Keresés</button>
+            </form>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
